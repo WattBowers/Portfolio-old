@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+import Border from './components/Border';
 import Links from './components/Links';
 import Title from './components/Title';
 import ExternalLinks from './components/ExternalLinks';
@@ -34,7 +34,7 @@ emailChange = (event) => {
   render() {
   return(
   <div className='App' >
-      
+        <Border />
         <Links layoutChange={this.layoutChange}/>
         <Title />
         <ExternalLinks />
