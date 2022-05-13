@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Popup from 'reactjs-popup';
+import checkmark from './Green-Check-Mark-Transparent-Background.png';
 import 'reactjs-popup/dist/index.css';
 import '../Card/Card.css';
 
@@ -52,23 +53,16 @@ const Card = ({page, messageChange, emailChange, email, message}) => {
                         <Popup
                             trigger={<button className="button"> Open Modal </button>}
                             modal
-                            nested
                           >
                             {close => (
                               <div className="modal">
                                 <button className="close" onClick={close}>
                                   &times;
                                 </button>
-                                <div className="header"> Modal Title </div>
+                                <div className="header"> Thank you, I will get back to you as soon as possible.</div>
                                 <div className="content">
                                   {' '}
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, a nostrum.
-                                  Dolorem, repellat quidem ut, minima sint vel eveniet quibusdam voluptates
-                                  delectus doloremque, explicabo tempore dicta adipisci fugit amet dignissimos?
-                                  <br />
-                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sit
-                                  commodi beatae optio voluptatum sed eius cumque, delectus saepe repudiandae
-                                  explicabo nemo nam libero ad, doloribus, voluptas rem alias. Vitae?
+                                  <img src={checkmark} />
                                 </div>
                                 <div className="actions">
                                   <Popup
