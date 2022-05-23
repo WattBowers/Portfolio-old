@@ -3,13 +3,13 @@ import './Links.css'
 
 const Links = ({ layoutChange }) => {
     return (
-      <div className='dark h3 mt0 w-100 center bb'>
+      <div className=' dark h3 mt0 w-100 center bb'>
           <div className="dib">
-            <ul className="list ph3 ph3-ns pv3">
-                <li class="dib mr2"><a href="#" onClick={() => {layoutChange('home')}} class="f6 f5-ns b db pa2 link dim black">Home</a></li>
-                <li class="dib mr2"><a href="#" onClick={() => {layoutChange('projects')}} class="f6 f5-ns b db pa2 link dim black">Projects</a></li>
-                <li class="dib mr2"><a href="#" onClick={() => {layoutChange('skills')}} class="f6 f5-ns b db pa2 link dim black">Skills</a></li>
-                <li class="dib mr2"><a href="#" onClick={() => {layoutChange('contact')}} class="f6 f5-ns b db pa2 link dim black">Contact</a></li>
+            <ul className="light-gray list ph3 ph3-ns pv3">
+                <li className="dib mr2"><a href="#" onClick={() => {layoutChange('home')}} className="light-gray f6 f5-ns b db pa2 link dim">Home</a></li>
+                <li className="dib mr2"><a href="#" onClick={() => {layoutChange('projects')}} className="light-gray f6 f5-ns b db pa2 link dim ">Projects</a></li>
+                <li className="dib mr2"><a href="#" onClick={() => {layoutChange('skills')}} className="light-gray f6 f5-ns b db pa2 link dim ">Skills</a></li>
+                <li className="dib mr2"><a href="#" onClick={() => {layoutChange('contact')}} className="light-gray f6 f5-ns b db pa2 link dim ">Contact</a></li>
             </ul>
           </div>
         

@@ -4,8 +4,9 @@ import Popup from 'reactjs-popup';
 import checkmark from './Green-Check-Mark-Transparent-Background.png';
 import 'reactjs-popup/dist/index.css';
 import '../Card/Card.css';
+import { useSpring, animated } from 'react-spring';
 
-const Card = ({page, messageChange, emailChange, email, message}) => {
+const Card = ({page, messageChange, emailChange, email, message, layoutChange}) => {
     const formId = 'iL7BUkVi'
     const formSparkUrl = `https://submit-form.com/${formId}`
 
@@ -22,13 +23,18 @@ const Card = ({page, messageChange, emailChange, email, message}) => {
 
         try {
             const result = await axios.post(formSparkUrl, payload)
-            console.log(result);
+            layoutChange('popup');
         } catch(error) {
             console.log(error);
         }
     }
     
-    
+    const props = useSpring({ to: { opacity: 1 }, 
+                              from: { opacity: 0 },
+                              reset: true,
+                              duration: 1000 }) 
+                              
+
     return(
     
         (() => {
@@ -50,35 +56,7 @@ const Card = ({page, messageChange, emailChange, email, message}) => {
                 return(
                     <div className='w-60 dib br2 pa3 ma4 grow bw2 shadow-4'>
                         <p>Skills</p>
-                        <Popup
-                            trigger={<button className="button"> Open Modal </button>}
-                            modal
-                            className="popup"
-                          >
-                            {close => (
-                              <div className="modal">
-                                <button className="close" onClick={close}>
-                                  &times;
-                                </button>
-                                <div className="header"> Thank you, I will get back to you as soon as possible.</div>
-                                <div className="content center">
-                                  {' '}
-                                  <img className='h-10 w-10 checkmark' src={checkmark} />
-                                </div>
-                                <div className="actions">
-                                  <button
-                                    className="button"
-                                    onClick={() => {
-                                      console.log('modal closed ');
-                                      close();
-                                    }}
-                                  >
-                                    close modal
-                                  </button>
-                                </div>
-                              </div>
-                            )}
-                          </Popup>
+                        
                     </div>
                     
                 )
@@ -109,8 +87,38 @@ const Card = ({page, messageChange, emailChange, email, message}) => {
                       </form>
                     </main>
                     </div>
+
+                  
                 )
-            }
+              }
+              if(page === 'popup') {
+                return(
+                  <div className='w-50 dib br2 pa3 ma4 grow bw2 shadow-4'>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur, tellus sed efficitur bibendum, quam quam laoreet magna, at accumsan ex neque vitae lectus. Nullam faucibus orci at ante aliquam, in pulvinar ligula rhoncus. Sed congue neque sit amet magna malesuada, eu dignissim enim mattis. Suspendisse vehicula mauris eu auctor imperdiet. Etiam commodo nibh eu tellus pellentesque, at ornare lorem vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quis mollis risus, ut dapibus dolor. Pellentesque vitae ultricies arcu. Nam vel felis dui. Fusce interdum vitae leo vulputate aliquam. Phasellus consequat leo ut tellus accumsan gravida. Vestibulum rhoncus iaculis nibh sit amet blandit. Curabitur non urna vel diam pellentesque viverra eu vitae ipsum. Maecenas lacus nisl, sagittis vitae dui sit amet, volutpat facilisis ante. Aliquam sit amet tortor pharetra, auctor massa at, pulvinar ipsum. Aenean euismod fringilla mi. Cras efficitur risus et dictum mattis. Donec non libero eget est tincidunt placerat. Proin consectetur, nunc tincidunt finibus varius, enim quam commodo velit, non blandit neque metus ac massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+                        <Popup
+                          defaultOpen
+                          modal
+                          className="popup"
+                        >
+                          {close => (
+                            <div className="modal">
+                              <button className="close" onClick={close}>
+                                &times;
+                              </button>
+                              <div className="header"> Thank you, I will get back to you as soon as possible.</div>
+                              <div className="content center">
+                                {' '}
+                                <animated.img  className='h-10 w-10 checkmark' src={checkmark} style={props} />
+                              </div>
+                            </div>
+                          )}
+                        </Popup>
+                  </div>
+                  
+                  
+                )
+              }
+
         
         })()
         
