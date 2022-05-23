@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Links from './components/Links';
+import Links from './Links/Links';
 import Title from './components/Title';
 import ExternalLinks from './components/ExternalLinks';
 import Card from './components/Card/Card';

@@ -31,3 +31,19 @@
     border-radius: 18px;
     border: 1px solid #cfcece;
   }
+
+  .checkmark {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .popup-content {
+    margin: auto;
+    background: rgb(255, 255, 255);
+    width: 30%;
+    padding: 5px;
+    position: relative;
+    bottom: 20vh;
+  }

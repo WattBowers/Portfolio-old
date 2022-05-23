@@ -53,6 +53,7 @@ const Card = ({page, messageChange, emailChange, email, message}) => {
                         <Popup
                             trigger={<button className="button"> Open Modal </button>}
                             modal
+                            className="popup"
                           >
                             {close => (
                               <div className="modal">
@@ -60,23 +61,11 @@ const Card = ({page, messageChange, emailChange, email, message}) => {
                                   &times;
                                 </button>
                                 <div className="header"> Thank you, I will get back to you as soon as possible.</div>
-                                <div className="content">
+                                <div className="content center">
                                   {' '}
-                                  <img src={checkmark} />
+                                  <img className='h-10 w-10 checkmark' src={checkmark} />
                                 </div>
                                 <div className="actions">
-                                  <Popup
-                                    trigger={<button className="button"> Trigger </button>}
-                                    position="top center"
-                                    nested
-                                  >
-                                    <span>
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
-                                      magni omnis delectus nemo, maxime molestiae dolorem numquam
-                                      mollitia, voluptate ea, accusamus excepturi deleniti ratione
-                                      sapiente! Laudantium, aperiam doloribus. Odit, aut.
-                                    </span>
-                                  </Popup>
                                   <button
                                     className="button"
                                     onClick={() => {
