@@ -22,8 +22,13 @@ const Card = ({page, messageChange, emailChange, email, message, layoutChange}) 
         };
 
         try {
+          if(email.includes('@') && email.includes('.')) {
             const result = await axios.post(formSparkUrl, payload)
             layoutChange('popup');
+          }
+          else {
+            window.alert('please enter a valid email address');
+          }
         } catch(error) {
             console.log(error);
         }
