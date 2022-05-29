@@ -53,3 +53,19 @@
     background-color: #F5F4F6;
   }
 
+  .button1 {
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 0!important;
+    cursor: pointer;
+    background-color: red;
+  }
+
+  .recognizerbackground {
+    background-image: url('./Facerecognizer-portfolio.png');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+

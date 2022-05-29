@@ -54,10 +54,10 @@ const Card = ({page, messageChange, emailChange, email, message, layoutChange}) 
             if(page === 'projects') {
                 return(
                     <div className='w-60 dib br2 pa3 ma4 grow bw2 shadow-4 bg-moon-gray h-50'>
-                      <div className='bg-white br4 w-100'>
-                        <div className='w-20 fl'>
+                      <div className='bg-white br4 w-100 overflow-auto'>
+                        <div className='w-20 fl br h3'>
                           <Popup
-                          trigger={<button className="button1"> Face Finder </button>}
+                          trigger={<button className="button1"> More Info </button>}
                           modal
                           nested
                         >
@@ -86,21 +86,18 @@ const Card = ({page, messageChange, emailChange, email, message, layoutChange}) 
                           )}
                           </Popup>
                         </div>
-                        <div className='w-20 fl'>
-                          <h3>This is a description</h3>
+                        <div className='w-40 fl br h3'>
+                          <h5 className='ma2'>Using the face detecton api from Clarify. Login to this tool to find a face in an image.</h5>
                         </div>
-                        <div className='w-33 fl'>
-                          <div className='recognizerbackground'>this is an image</div>
+                        <div className='w-40 fl h3'>
+                          <div className='recognizerbackground'></div>
                         </div>
                       </div>
                   
-                      
-                      
-                      
-                      
-                      <div>
-                      <Popup
-                        trigger={<button className="button"> The Boredom Butler </button>}
+                      <div className='bg-white br4 w-100 overflow-auto'>
+                        <div className='w-20 fl br h3'>
+                        <Popup
+                        trigger={<button className="button1"> More Info </button>}
                         modal
                         nested
                       >
@@ -127,6 +124,19 @@ const Card = ({page, messageChange, emailChange, email, message, layoutChange}) 
                           </div>
                         )}
                       </Popup>
+                        </div>
+                        <div className='w-40 fl br h3'>
+                          <h5 className='ma2'>Using the face detecton api from Clarify. Login to this tool to find a face in an image.</h5>
+                        </div>
+                        <div className='w-40 fl h3'>
+                          <div className='recognizerbackground'></div>
+                        </div>
+                      </div>
+                      
+                      
+                      
+                      <div>
+                      
                       </div>
                       </div>
                     
