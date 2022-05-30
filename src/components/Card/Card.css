@@ -11,6 +11,7 @@
   .modal > .content {
     width: 100%;
     padding: 10px 5px;
+    font-size: large;
   }
   .modal > .actions {
     width: 100%;
@@ -43,7 +44,7 @@
   .popup-content {
     margin: auto;
     background: rgb(255, 255, 255);
-    width: 30%;
+    width: 20%;
     padding: 5px;
     position: relative;
     bottom: 20vh;
@@ -59,7 +60,8 @@
     border: none;
     padding: 0!important;
     cursor: pointer;
-    background-color: red;
+    background-color: rgb(233, 214, 214);
+    font-weight: bold;
   }
 
   .recognizerbackground {
@@ -67,5 +69,20 @@
     background-size: cover;
     height: 100%;
     width: 100%;
+    overflow: hidden;
+  }
+
+  .butlerbackground {
+    background-image: url('./boredom-butler.png');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  @media only screen and (max-width: 425px) {
+    .title {
+      display: none;
+    }
   }
 
