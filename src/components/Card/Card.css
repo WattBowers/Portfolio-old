@@ -54,9 +54,13 @@
     height: 400px;
     width: auto;
     margin-top: 4vh;
-    margin-right: -9vw;
-    border-radius: 30%;
-    
+    margin-right: -4vw;
+    border-radius: 1%;
+    border: 5px solid #062F5D;
+  }
+
+  .px-margin {
+    margin-top: 5px;
   }
 
   .huge {
@@ -110,6 +114,9 @@
     .profile {
       height: 200px;
       width: auto;
+    }
+    .huge {
+      font-size: 3rem;
     }
   }
 

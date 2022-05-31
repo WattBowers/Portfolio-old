@@ -48,7 +48,7 @@ const Card = ({page, messageChange, emailChange, email, message, layoutChange}) 
             if(page === 'home') {
                 return(
                     <div className=''>
-                        <h1 className='fl light-gray ml3 w-40 huge'>Hi, Im Jackson and Im a front end web developer </h1>
+                        <h1 className='fl light-gray ml5 w-40 huge'>Welcome, <br /> I'm Jackson and Im a front end web developer </h1>
                         <img className='profile' src={profile} />
                     </div>
                 )
@@ -70,7 +70,7 @@ const Card = ({page, messageChange, emailChange, email, message, layoutChange}) 
                           <div className='recognizerbackground'></div>
                         </div>
                         <div className='w-60 fl br h3'>
-                          <h5 className='dib v-mid'>Using the face detecton api from Clarify. Login to this tool to find a face in an image.</h5>
+                          <h5 className='mh3 px-margin'>Using the face detecton api from Clarify. Login to this tool to find a face in an image.</h5>
                         </div>
                         <div className='w-20 fl h3'>
                           <Popup
@@ -112,7 +112,7 @@ const Card = ({page, messageChange, emailChange, email, message, layoutChange}) 
                           <div className='butlerbackground'></div>
                         </div>
                         <div className='w-60 fl br h3'>
-                          <h5 className='dib v-mid'>Dont know what movie or TV show to watch? Let The Boredom Butler help.</h5>
+                          <h5 className='dib v-mid mh3 px-margin'>Dont know what movie or TV show to watch? Let The Boredom Butler help.</h5>
                         </div>
                         <div className='w-20 fl h3'>
                           <Popup
