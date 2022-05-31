@@ -75,6 +75,7 @@
   .home {
     float: right;
     width: 50%;
+    margin-right: 1%;
   }
 
   .formcolor {
@@ -132,6 +133,7 @@
     .home {
       float: none;
       margin-left: 25%;
+      margin-right: 0%;
     }
   }
 
