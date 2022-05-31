@@ -4,6 +4,7 @@ import Popup from 'reactjs-popup';
 import checkmark from './Green-Check-Mark-Transparent-Background.png';
 import 'reactjs-popup/dist/index.css';
 import '../Card/Card.css';
+import profile from './profile.jpg';
 import { useSpring, animated } from 'react-spring';
 
 
@@ -46,14 +47,23 @@ const Card = ({page, messageChange, emailChange, email, message, layoutChange}) 
         (() => {
             if(page === 'home') {
                 return(
-                    <div className='w-50 dib br2 pa3 ma4 grow bw2 shadow-4 bg-moon-gray'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur, tellus sed efficitur bibendum, quam quam laoreet magna, at accumsan ex neque vitae lectus. Nullam faucibus orci at ante aliquam, in pulvinar ligula rhoncus. Sed congue neque sit amet magna malesuada, eu dignissim enim mattis. Suspendisse vehicula mauris eu auctor imperdiet. Etiam commodo nibh eu tellus pellentesque, at ornare lorem vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quis mollis risus, ut dapibus dolor. Pellentesque vitae ultricies arcu. Nam vel felis dui. Fusce interdum vitae leo vulputate aliquam. Phasellus consequat leo ut tellus accumsan gravida. Vestibulum rhoncus iaculis nibh sit amet blandit. Curabitur non urna vel diam pellentesque viverra eu vitae ipsum. Maecenas lacus nisl, sagittis vitae dui sit amet, volutpat facilisis ante. Aliquam sit amet tortor pharetra, auctor massa at, pulvinar ipsum. Aenean euismod fringilla mi. Cras efficitur risus et dictum mattis. Donec non libero eget est tincidunt placerat. Proin consectetur, nunc tincidunt finibus varius, enim quam commodo velit, non blandit neque metus ac massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+                    <div className=''>
+                        <h1 className='fl light-gray ml3 w-40 huge'>Hi, Im Jackson and Im a front end web developer </h1>
+                        <img className='profile' src={profile} />
                     </div>
                 )
             }
+            if(page === 'about') {
+              return(
+                <div className='vertical-center w-50 dib br2 pa3 grow bw2 shadow-4 bg-moon-gray'>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur, tellus sed efficitur bibendum, quam quam laoreet magna, at accumsan ex neque vitae lectus. Nullam faucibus orci at ante aliquam, in pulvinar ligula rhoncus. Sed congue neque sit amet magna malesuada, eu dignissim enim mattis. Suspendisse vehicula mauris eu auctor imperdiet. Etiam commodo nibh eu tellus pellentesque, at ornare lorem vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quis mollis risus, ut dapibus dolor. Pellentesque vitae ultricies arcu. Nam vel felis dui. Fusce interdum vitae leo vulputate aliquam. Phasellus consequat leo ut tellus accumsan gravida. Vestibulum rhoncus iaculis nibh sit amet blandit. Curabitur non urna vel diam pellentesque viverra eu vitae ipsum. Maecenas lacus nisl, sagittis vitae dui sit amet, volutpat facilisis ante. Aliquam sit amet tortor pharetra, auctor massa at, pulvinar ipsum. Aenean euismod fringilla mi. Cras efficitur risus et dictum mattis. Donec non libero eget est tincidunt placerat. Proin consectetur, nunc tincidunt finibus varius, enim quam commodo velit, non blandit neque metus ac massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+                </div>
+              )
+            }
+            
             if(page === 'projects') {
                 return(
-                    <div className='w-60 dib br2 pa3 ma4 grow bw2 shadow-4 bg-moon-gray h-50'>
+                    <div className='vertical-center w-50 dib br2 pa3 grow bw2 shadow-4 bg-moon-gray h-50'>
                       <h1 className='bb'>Face Finder</h1>
                       <div className='bg-white br4 w-100 overflow-auto mb4 shadow-4'>
                         <div className='w-20 fl br h3'>
@@ -141,7 +151,7 @@ const Card = ({page, messageChange, emailChange, email, message, layoutChange}) 
             }
             if(page === 'skills') {
                 return(
-                    <div className='w-60 dib br2 pa3 ma4 grow bw2 shadow-4 bg-moon-gray'>
+                    <div className='vertical-center w-50 dib br2 pa3 grow bw2 shadow-4 bg-moon-gray'>
                         <p>Skills</p>
                         
                     </div>
@@ -150,7 +160,7 @@ const Card = ({page, messageChange, emailChange, email, message, layoutChange}) 
             }
             if(page === 'contact') {
                 return(
-                    <div className='w-50 dib br1 pa1 ma4 bw2 shadow-4 bg-moon-gray'>
+                    <div className='vertical-center w-50 dib br2 pa3 grow bw2 shadow-4 bg-moon-gray'>
                     <main class="pa4 black-80">
                       <form class="measure center">
                         <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
@@ -180,7 +190,7 @@ const Card = ({page, messageChange, emailChange, email, message, layoutChange}) 
               }
               if(page === 'popup') {
                 return(
-                  <div className='w-60 dib br2 pa3 ma4 grow bw2 shadow-4 bg-moon-gray h-50'>
+                  <div className='vertical-center w-50 dib br2 pa3 grow bw2 shadow-4 bg-moon-gray'>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur, tellus sed efficitur bibendum, quam quam laoreet magna, at accumsan ex neque vitae lectus. Nullam faucibus orci at ante aliquam, in pulvinar ligula rhoncus. Sed congue neque sit amet magna malesuada, eu dignissim enim mattis. Suspendisse vehicula mauris eu auctor imperdiet. Etiam commodo nibh eu tellus pellentesque, at ornare lorem vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quis mollis risus, ut dapibus dolor. Pellentesque vitae ultricies arcu. Nam vel felis dui. Fusce interdum vitae leo vulputate aliquam. Phasellus consequat leo ut tellus accumsan gravida. Vestibulum rhoncus iaculis nibh sit amet blandit. Curabitur non urna vel diam pellentesque viverra eu vitae ipsum. Maecenas lacus nisl, sagittis vitae dui sit amet, volutpat facilisis ante. Aliquam sit amet tortor pharetra, auctor massa at, pulvinar ipsum. Aenean euismod fringilla mi. Cras efficitur risus et dictum mattis. Donec non libero eget est tincidunt placerat. Proin consectetur, nunc tincidunt finibus varius, enim quam commodo velit, non blandit neque metus ac massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
                         <Popup
                           defaultOpen

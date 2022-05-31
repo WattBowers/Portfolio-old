@@ -34,7 +34,6 @@ emailChange = (event) => {
   return(
   <div className='App' >
         <Links layoutChange={this.layoutChange}/>
-        <Title />
         <ExternalLinks />
         <Card messageChange={this.messageChange} 
                 page={this.state.page} 

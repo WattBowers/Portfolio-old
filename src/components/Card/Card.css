@@ -50,6 +50,19 @@
     bottom: 20vh;
   }
 
+  .profile {
+    height: 400px;
+    width: auto;
+    margin-top: 4vh;
+    margin-right: -9vw;
+    border-radius: 30%;
+    
+  }
+
+  .huge {
+    font-size: 5rem;
+  }
+
   .formcolor {
     background-color: #F5F4F6;
   }
@@ -80,9 +93,23 @@
     overflow: hidden;
   }
 
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    right: 25%;
+  }
+
   @media only screen and (max-width: 425px) {
     .title {
       display: none;
+    }
+  }
+
+  @media only screen and (max-width:768px) {
+    .profile {
+      height: 200px;
+      width: auto;
     }
   }
 
