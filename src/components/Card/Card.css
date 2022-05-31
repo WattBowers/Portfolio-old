@@ -78,6 +78,10 @@
     margin-right: 1%;
   }
 
+  .static-length {
+    height: 400px;
+  }
+
   .formcolor {
     background-color: #F5F4F6;
   }
@@ -88,7 +92,7 @@
     border: none;
     padding: 0!important;
     cursor: pointer;
-    background-color: rgb(233, 214, 214);
+    background-color: #ccdff2;
     font-weight: bold;
   }
 

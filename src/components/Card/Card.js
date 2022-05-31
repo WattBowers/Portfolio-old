@@ -66,7 +66,7 @@ const Card = ({page, messageChange, emailChange, email, message, layoutChange}) 
             
             if(page === 'projects') {
                 return(
-                    <div className='vertical-center w-50 dib br2 pa3 grow bw2 shadow-4 bg-moon-gray h-50'>
+                    <div className='vertical-center w-50 dib br2 pa3 grow bw2 shadow-4 bg-moon-gray static-length'>
                       <h1 className='bb'>Face Finder</h1>
                       <div className='bg-white br4 w-100 overflow-auto overflow-y-hidden mb4 shadow-4'>
                         <div className='w-20 fl br h3'>
