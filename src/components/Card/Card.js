@@ -65,7 +65,7 @@ const Card = ({page, messageChange, emailChange, email, message, layoutChange}) 
                 return(
                     <div className='vertical-center w-50 dib br2 pa3 grow bw2 shadow-4 bg-moon-gray h-50'>
                       <h1 className='bb'>Face Finder</h1>
-                      <div className='bg-white br4 w-100 overflow-auto mb4 shadow-4'>
+                      <div className='bg-white br4 w-100 overflow-auto overflow-y-hidden mb4 shadow-4'>
                         <div className='w-20 fl br h3'>
                           <div className='recognizerbackground'></div>
                         </div>
@@ -107,7 +107,7 @@ const Card = ({page, messageChange, emailChange, email, message, layoutChange}) 
                         </div>
                       </div>
                       <h1 className='bb'>The Boredom Butler</h1>
-                      <div className='bg-white br4 w-100 overflow-auto shadow-4'>
+                      <div className='bg-white br4 w-100 overflow-auto overflow-y-hidden shadow-4'>
                         <div className='w-20 fl br h3'>
                           <div className='butlerbackground'></div>
                         </div>
