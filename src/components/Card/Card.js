@@ -49,8 +49,10 @@ const Card = ({page, messageChange, emailChange, email, message, layoutChange}) 
                 return(
                     <div className=''>
                         <img className='profile' src={profile} />
-                        <h1 className='fr light-gray mr5 w-40 huge'>Welcome <h1 className='light-gray medium'> I'm Jackson and I'm a front end web developer </h1></h1>
-                        
+                        <div className='home'>
+                          <h1 className='light-gray w-40 huge'>Welcome </h1>
+                          <h1 className='light-gray medium'> I'm Jackson and I'm a front end web developer </h1>
+                        </div>
                     </div>
                 )
             }
