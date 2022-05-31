@@ -50,7 +50,7 @@ const Card = ({page, messageChange, emailChange, email, message, layoutChange}) 
                     <div className=''>
                         <img className='profile' src={profile} />
                         <div className='home'>
-                          <h1 className='light-gray w-40 huge'>Welcome </h1>
+                          <h1 className='light-gray huge'>Welcome </h1>
                           <h1 className='light-gray medium'> I'm Jackson and I'm a front end web developer </h1>
                         </div>
                     </div>
