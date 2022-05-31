@@ -54,7 +54,7 @@
     height: 400px;
     width: auto;
     margin-top: 4vh;
-    margin-right: -4vw;
+    margin-left: -4vw;
     border-radius: 1%;
     border: 5px solid #062F5D;
   }
@@ -65,6 +65,11 @@
 
   .huge {
     font-size: 5rem;
+    font-weight: 900;
+  }
+
+  .medium {
+    font-size: 4rem;
   }
 
   .formcolor {

@@ -48,8 +48,9 @@ const Card = ({page, messageChange, emailChange, email, message, layoutChange}) 
             if(page === 'home') {
                 return(
                     <div className=''>
-                        <h1 className='fl light-gray ml5 w-40 huge'>Welcome, <br /> I'm Jackson and Im a front end web developer </h1>
                         <img className='profile' src={profile} />
+                        <h1 className='fr light-gray mr5 w-40 huge'>Welcome <h1 className='light-gray medium'> I'm Jackson and I'm a front end web developer </h1></h1>
+                        
                     </div>
                 )
             }
