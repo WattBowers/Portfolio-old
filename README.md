@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# My Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the repository for my coding portfolio. Feel free to clone the repository and use the underlying code. 
 
-## Available Scripts
+## Tech
 
-In the project directory, you can run:
+This project is built using React.js, it is hosted using Heroku. Here is the link to the live site: https://jackson-watt-bowers.herokuapp.com/#
 
 ### `npm start`
 
